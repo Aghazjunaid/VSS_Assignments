@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin: 20px 0px;">SignUp Form</h1>
+        <div class="form-body">
+            <form style="padding: 10px;">
+                <div class="input-body">
+                    <label>First Name :</label>
+                    <input type="text" placeholder="Enter your first name"/>
+                </div>
+                <div class="input-body">
+                    <label>Last Name :</label>
+                    <input type="text" placeholder="Enter your last name"/>
+                </div>
+                <div class="input-body">
+                    <label>Email :</label>
+                    <input type="email" placeholder="Enter your email"/>
+                </div>
+                <div class="input-body">
+                    <label>Phone :</label>
+                    <input type="number" placeholder="Enter your phone"/>
+                </div>
+                <div class="input-body">
+                    <label>Password :</label>
+                    <input type="password" placeholder="Enter your password"/>
+                </div>
+                <div class="input-body">
+                    <label>Date Of Birth :</label>
+                    <input type="date"/>
+                </div>
+                <div class="radio-body">
+                    <label>Gender :</label>
+                    <span>
+                        <label style="font-size: 15px;">Male</label>
+                        <input type="radio" value="Male"/>
+                        <label style="font-size: 15px; margin-left: 15px;">Female</label>
+                        <input type="radio" value="Female"/>    
+                    </span>
+                </div>
+                <div class="input-body">
+                    <label for="state">State :</label>
+                    <select id="state" name="state">
+                        <option value="volvo">Bihar</option>
+                        <option value="saab">Haryana</option>
+                        <option value="fiat">West Bengal</option>
+                        <option value="audi">Jharkhand</option>
+                      </select>
+                </div>
+                <div class="input-body">
+                    <label style=" vertical-align: top;">Address :</label>
+                    <textarea name="message" style="width:200px; height:100px;"></textarea>
+                </div>
+                <div class="btns">
+                    <input type="submit" value="Submit"/>
+                    <input type="reset" style="background-color: red;"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
