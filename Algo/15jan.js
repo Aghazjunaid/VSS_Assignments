@@ -59,7 +59,7 @@ for(let i=1; i<101;i++){
 
 // Write factorial of 10
 let ans = 1
-for(let i=1; i<10;i++){
+for(let i=1; i<11;i++){
     ans *= i
 }
-console.log(ans) //362880
+console.log(ans) //3628800
