@@ -85,3 +85,25 @@ function recur4(n){
 
 recur4(100)
 
+function recur5(n){
+    if(n==0){
+        return
+    }
+    recur5(n-1)
+    if(n%2!=0){
+        console.log(n)
+    }
+}
+
+recur5(100)
+
+
+function factorial(n){
+    if(n==1){
+        return 1
+    }
+    return n * factorial(n-1)
+}
+
+console.log(factorial(4)) //24
+console.log(factorial(10)) //3628800
