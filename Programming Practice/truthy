@@ -1,0 +1,24 @@
+what is difference between truthy and false value ?
+
+A value that represents empty, null, or zero (such as 0, or "") evaluates to false, 
+and any other value (such as 1, 5, -19, "ghsfsah", or other meaningful content) evaluates to true.
+
+There are 6 falsy values present in js
+1. undefined
+2. null
+3. 0
+4. -0
+5. NaN
+6. "" // the empty string
+
+
+Create a function to return whether input is a truthy or falsy value
+
+function check(n){
+    if(Boolean(n)){
+        return "truthy value"
+    } else{
+        return "truthy value"
+    }
+}
+
