@@ -29,3 +29,21 @@ let arr = [0,1,0,1,0,0,1,1,1,0]
 let result = segregate(arr)
 console.log(result) // [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
 
+// Method-3
+// Using Dutch National Flag Algorithm
+function segregate(arr){
+    
+    let l = 0
+    for(let i =0; i< arr.length;i++){
+        if(arr[i]==0){
+            [arr[i],arr[l]] = [arr[l],arr[i]]
+            l++
+        } 
+    }
+
+    return arr
+}
+
+let arr = [0,1,0,1,0,0,1,1,1,0]
+let result = segregate(arr)
+console.log(result) // [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
