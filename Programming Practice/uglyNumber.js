@@ -21,19 +21,22 @@ function checkUgly5(num){
 
 function uglyNumber(n){
 
+    let arr = []
     let uglyThNumber = 1
     let count = 1
-    while(count < n){
+    while(count <= n){
         let processedNum = checkUgly2(uglyThNumber)
         processedNum = checkUgly3(processedNum)
         processedNum = checkUgly5(processedNum)
 
         if(processedNum == 1){
+            arr.push(uglyThNumber)
             count += 1
         }
         uglyThNumber++
     }
-    return uglyThNumber
+    return arr
 }
 
 console.log(uglyNumber(15))
+//[1,  2,  3,  4,  5,  6, 8, 9, 10, 12, 15, 16, 18, 20, 24]
