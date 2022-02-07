@@ -1,3 +1,11 @@
+// Algorithm
+// Step-1 Create a function which takes one argument
+// step-2 Create loop Which iterate to argument times
+// Step-3 write condition if completely divided by 15 print FizzBuzz
+// Step-4 write condition if completely divided by 5 print Buzz
+// Step-5 write condition if completely divided by 3 print Fizz
+// Step-6 if all condition fails simply print number
+
 function fizzBuzz(n){
     for(let i = 1; i<=n ; i++){
         if(i%15 == 0) console.log("FizzBuzz")
