@@ -36,32 +36,34 @@ class Calculator extends Component{
 
     calculate = (e) => {
         e.preventDefault();
+        let num1 = Number(this.state.num1)
+        let num2 = Number(this.state.num2)
         if(this.state.operation === "add"){
-            let total = Number(this.state.num1) +  Number(this.state.num2)
+            let total = num1 +  num2
             this.setState({
                 ...this.state,
                 total : total
             })
         }else if(this.state.operation === "substract"){
-            let total = Number(this.state.num1) -  Number(this.state.num2)
+            let total = num1 - num2
             this.setState({
                 ...this.state,
                 total : total
             })
         }else if(this.state.operation === "multiply"){
-            let total = Number(this.state.num1) *  Number(this.state.num2)
+            let total = num1 * num2
             this.setState({
                 ...this.state,
                 total : total
             })
         }else if(this.state.operation === "divide"){
-            let total = Number(this.state.num1) /  Number(this.state.num2)
+            let total = num1 / num2
             this.setState({
                 ...this.state,
                 total : total
             })
         }else if(this.state.operation === "remainder"){
-            let total = Number(this.state.num1) %  Number(this.state.num2)
+            let total = num1 % num2
             this.setState({
                 ...this.state,
                 total : total
