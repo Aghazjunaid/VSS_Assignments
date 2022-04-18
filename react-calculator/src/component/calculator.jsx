@@ -10,6 +10,32 @@ class Calculator extends Component{
         }
     }
 
+    setFirstNumber = (e) => {
+        this.setState({
+            ...this.state,
+            num1: e.target.value
+        })
+    }
+
+    setSecondNumber = (e) => {
+        console.log(e.target.value)
+        this.setState({
+            ...this.state,
+            num2: e.target.value
+        })
+    }
+
+    setOperation = (e) => {
+        console.log(e.target.value)
+        this.setState({
+            ...this.state,
+            operation: e.target.value
+        })
+    }
+
+    calculate = () => {
+
+    }
 
 
     render(){
@@ -29,7 +55,9 @@ class Calculator extends Component{
                         <option value="multiply">Multiply</option>
                         <option value="divide">Divide</option>
                     </select>
-
+                    <div>
+                        <button type='submit' onClick={this.calculate}>Calculate</button>
+                    </div>
                 </form>
             
             </>
