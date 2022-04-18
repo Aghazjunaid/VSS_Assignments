@@ -17,6 +17,14 @@ class Form extends Component {
         })
     }
 
+    ageChange = (e) => {
+        console.log(e.target.value)
+        this.setState({
+            ...this.state,
+            age: e.target.value
+        })
+    }
+
     render(){
         return (
             <>
@@ -24,11 +32,11 @@ class Form extends Component {
                     <input type={"text"} onChange={this.nameChange}/>
                 </div>
                 <div>
-                    <input type={"number"} />
+                    <input type={"number"} onChange={this.ageChange}/>
                 </div>
                 <div>
                     <h3>Name : {this.state.name}</h3>
-                    <h3>Age : </h3>
+                    <h3>Age : {this.state.age}</h3>
                 </div>
             </>
         )
