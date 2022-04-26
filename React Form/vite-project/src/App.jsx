@@ -3,6 +3,7 @@ import './App.css'
 import Form from './components/Form/form';
 import FunctionalForm from './components/Form/functional-form';
 import Types from './components/UseEffect/Types';
+import LifecycleV1 from './components/Lifecycle Method/LifeCycle';
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
     <>
     {/* <Form/> */}
     {/* <FunctionalForm/> */}
-    <Types/>
+    {/* <Types/> */}
+    <LifecycleV1/>
     </>
   )
 }
