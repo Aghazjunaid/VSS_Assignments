@@ -12,27 +12,27 @@ class Calculator extends Component{
     }
 
     setFirstNumber = (e) => {
+        console.log([e.target.name],e.target.value)
         this.setState({
-            ...this.state,
-            num1: e.target.value
+            [e.target.name] : e.target.value
         })
     }
 
-    setSecondNumber = (e) => {
-        console.log(e.target.value)
-        this.setState({
-            ...this.state,
-            num2: e.target.value
-        })
-    }
+    // setSecondNumber = (e) => {
+    //     console.log(e.target.value)
+    //     this.setState({
+    //         ...this.state,
+    //         num2: e.target.value
+    //     })
+    // }
 
-    setOperation = (e) => {
-        console.log(e.target.value)
-        this.setState({
-            ...this.state,
-            operation: e.target.value
-        })
-    }
+    // setOperation = (e) => {
+    //     console.log(e.target.value)
+    //     this.setState({
+    //         ...this.state,
+    //         operation: e.target.value
+    //     })
+    // }
 
     calculate = (e) => {
         e.preventDefault();
@@ -79,12 +79,12 @@ class Calculator extends Component{
             <>
                 <form>
                     <div>
-                        <input type={"number"} placeholder="Enter first number" onChange={this.setFirstNumber} required/>
+                        <input type={"number"} name={"num1"} placeholder="Enter first number" onChange={this.setFirstNumber} required/>
                     </div>
                     <div>
-                        <input type={"number"} placeholder="Enter second number" onChange={this.setSecondNumber} required/>
+                        <input type={"number"} name={"num2"} placeholder="Enter second number" onChange={this.setFirstNumber} required/>
                     </div>
-                    <select name="operation" onChange={this.setOperation} required>
+                    <select name="operation" name={"operation"} onChange={this.setFirstNumber} required>
                         <option>Select operation</option>
                         <option value="add">Add</option>
                         <option value="substract">Substract</option>
