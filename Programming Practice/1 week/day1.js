@@ -113,4 +113,48 @@
 // }
 // console.log(longestWord()) //hahahahaha
 
-//To find longest word from a string using functions
+// //To find longest word from a string using functions
+// let string = "supriya is a hahahahaha good girl"
+// let result = string.split(" ").sort((a,b) => b.length-a.length)
+// console.log(result[0]) //hahahahaha
+
+// //To find vowels and its count in a given string
+// let opt = "aghaz junaid"
+// const obj ={}
+// for(let i=0;i<opt.length;i++){
+//     if(opt[i] in obj){
+//         obj[opt[i]] += 1
+//     }else{
+//         obj[opt[i]] = 1
+//     }
+// }
+// console.log(obj) //{ a: 3, g: 1, h: 1, z: 1, ' ': 1, j: 1, u: 1, n: 1, i: 1, d: 1 }
+
+// //To find longest common string from array of strings
+// function longestCommonString(){
+//     const array=["go","google","gosh"]
+//     let ans = ''
+//     for(let i=0;i<array.length;i++){
+//         let bol = true
+//         let value= array[i]
+//         for(let j=0;j<array.length;j++){
+//             if(!array[j].includes(array[i])){
+//                 bol = false
+//                 break
+//             }
+//         }
+//         if(bol) ans=value
+//     }
+//     console.log(ans) //go
+// }
+//   longestCommonString() 
+
+// //To find character occurance from the string
+// const str= "priyapri"
+// count = 0
+// for(let i=0;i<str.length;i++){
+//     if(str.charAt(i) == "p") ++count
+// }
+// console.log(count) //2
+
+
