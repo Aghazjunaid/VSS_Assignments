@@ -65,4 +65,42 @@
 //     }
 // }
 
-//
+// //To find unique values from 2 arrays and keep into one array. i.e. Union.
+// let arr1 = [1,2,3,4,4]
+// let arr2 = [2,3,4,5,6]
+// console.log([...new Set([...arr1,...arr2])]) //[ 1, 2, 3, 4, 5, 6 ]
+
+// //Find first duplicate element from an array
+// function firstDuplicate() {
+//     let arr = [1,2,2,5,5];
+//     let data = [];
+//     for(let i=1;i<arr.length;i++){
+//         if(arr[i-1] == arr[i]){
+//             data.push(arr[i])
+//         }
+//     }
+//     return data
+// }
+// console.log(firstDuplicate()) //[2,5]
+
+// //Write a program that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz"
+// for(let i=1;i<=100;i++){
+//     if(i%3 ===0 && i%5 === 0){
+//         console.log("FizzBuzz")
+//     } else if(i%5===0){
+//         console.log("Buzz")
+//     } else if(i%3 ===0){
+//         console.log("Fizz")
+//     } else{
+//         console.log(i)
+//     }
+// }
+
+// //Uppercase of each first letter of a words
+// let str = "india is my country"
+// let arr = str.split(" ")
+// let newArr = arr.map(ele => {
+//     return ele[0].toUpperCase()+ele.slice(1)
+// }).join(" ")
+// console.log(newArr) //India Is My Country
+
