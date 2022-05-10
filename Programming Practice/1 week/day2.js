@@ -25,3 +25,44 @@
 //         console.log(x); //9
 //     }
 // }
+
+// //Sorting of a string/characters
+// let arr = ["d","g","y","e","r","p"]
+// console.log(arr.sort())
+
+// //Sorting of an number
+// let arr = [1,23,34,2,76,78]
+// for(let i=0;i<arr.length;i++){
+//     for(let j=0;j<arr.length;j++){
+//         if(arr[i] < arr[j]){
+//             [arr[i],arr[j]] = [arr[j],arr[i]]
+//         }
+//     }
+// }
+// console.log(arr) //[ 1, 2, 23, 34, 76, 78 ]
+
+// //To check if given number is prime or not
+// let num = 9
+// let bool = true
+// for(let i=2;i<num;i++){
+//     if(num%i == 0){
+//         bool = false
+//     }
+// }
+// console.log(bool) //false
+
+// //To print all the prime numbers from 2 to 100
+// for(let i=2;i<=100;i++){
+//     let flag = 0
+//     for(let j=2;j<i;j++){
+//         if(i%j==0){
+//             flag = 1
+//             break
+//         }
+//     }
+//     if(flag==0){
+//         console.log(i)
+//     }
+// }
+
+//
