@@ -199,3 +199,33 @@
 // const result = largestPairSumofTwo([9,7,8,4,5,6,1,2,3])
 // console.log(result) //17
 
+// //To find the largest pair of the 2 elements using indexing with sorted elements
+// let arr = [1,2,3,4,5,6,7,8,9]
+// console.log(arr[arr.length-1]+arr[arr.length-2]) //17
+
+// //To find the index of an element from an array
+// const letters = ['a', 'b', 'c']
+// for(let i in letters){
+//     if(letters[i] == 'b'){
+//         console.log(i) //1
+//     }
+// }
+
+// //Fibonacci Series (0,1,1,2,3,5,8,13....)
+// let arr = [0,1]
+// for(let i=1;i<5;i++){
+//     arr.push(arr[i-1]+arr[i])
+// }
+// console.log(arr) //[ 0, 1, 1, 2, 3, 5 ]
+
+
+
+
+
+
+
+
+
+
+
+
