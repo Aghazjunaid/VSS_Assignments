@@ -128,6 +128,56 @@
 // }
 // console.log(arr) //[ 4, 9, 76, 90 ]
 
+// //Print string n times in custom way using loops
+// let str="aj"
+// let newStr=""
+// for(let i=1;i<=5;i++){
+// newStr+=str
+// }
+// console.log(newStr) //ajajajajaj
+
+//Truncate the string upto specific character. For ex ("I am priya", 3) => "I am..."
+// function truncateString(str, num){
+//     if(num<=3){
+//         return str.slice(0,num)
+//     }
+//     return str.slice(0,num-3)+"..."
+    
+//     //retuen only 4 digits thats why subtracted from 3
+// }
+// console.log(truncateString("priyabagde",2)) //pr
+// console.log(truncateString("priyabagde",4)) //p... //retuen only 4 digits
 
 
+// //To find only truthy values using filter.
+// let arr = ["priya", 0, "", false, null, undefined, "ate", NaN, 9];
+// console.log(arr.filter(Boolean)) //[ 'priya', 'ate', 9 ]
 
+// //To find only truthy values from an array.
+// let arr = ["priya", 0, "", false, null, undefined, "ate", NaN, 9];
+// console.log(arr.filter(ele => { if(ele) return ele})) //[ 'priya', 'ate', 9 ]
+
+// //Converting one dimensional array into n dimensional array using slice.
+// function covertArryInOneDimension(arr,num){
+//   var group=[]
+//   while(arr.length>0){
+//   group.push(arr.slice(0, num))
+//   arr = arr.slice(num)
+//   }
+//   return group
+// }
+
+// const input = covertArryInOneDimension(["a", "b", "c", "d"], 2);
+// console.log(input)
+
+// //Converting one dimensional array into n dimensional array using splice
+// function covertArryInOneDimension(arr,num){
+//     var group=[]
+//     while(arr.length>0){
+//     group.push(arr.splice(0,num))
+//     }
+//     return group
+//   }
+  
+//   const input = covertArryInOneDimension(["a", "b", "c", "d"], 1);
+//   console.log(input) //[ [ 'a' ], [ 'b' ], [ 'c' ], [ 'd' ] ]
