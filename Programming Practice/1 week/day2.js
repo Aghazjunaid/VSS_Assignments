@@ -104,3 +104,30 @@
 // }).join(" ")
 // console.log(newArr) //India Is My Country
 
+// //To check ending of the string with given character/s using inbuilt function
+// function confirmEnding(str,target){
+//     return str[str.length-1] === target
+//  }
+//  console.log(confirmEnding("priya","a")) //true
+
+// //Print string n times using inbuilt function
+// let str = "aj"
+// console.log(str.repeat(5)) //ajajajajaj
+
+// //To find the largest elements from the 2 dimensional array.
+// const input = [
+//     [1, 2, 3, 4],
+//     [5, 6, 7, 9],
+//     [45, 76, 2, 1],
+//     [89, 90, 87, 9],
+// ];
+// let arr = []
+// for(let i=0;i<input.length;i++){
+//     let sortedArray = input[i].sort((a,b) => b-a)
+//     arr.push(sortedArray[0])
+// }
+// console.log(arr) //[ 4, 9, 76, 90 ]
+
+
+
+
