@@ -157,4 +157,45 @@
 // }
 // console.log(count) //2
 
+// //To find a first pair from a number array whose sum is zero
+// let arr = [-5,-4,-3,-2,-1,0,1,2,3,4,5]
+// for(let i=0;i<arr.length;i++){
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i]+arr[j] == 0){
+//             console.log([arr[i],arr[j]])
+//         }
+//     }
+// }
+// // [ -5, 5 ]
+// // [ -4, 4 ]
+// // [ -3, 3 ]
+// // [ -2, 2 ]
+// // [ -1, 1 ]
+
+// //To find a first pair from a number array whose sum is zero using indexing
+// let arr = [-5,-4,-3,-2,-1,0,2,4,6,8]
+// let r = arr.length-1
+// let l = 0
+
+// while(l<r){
+//     if(arr[l]+arr[r] > 0){
+//         r--
+//     }else if(arr[l]+arr[r]<0){
+//         l++
+//     }else{
+//         console.log(arr[l],arr[r])
+//         l++
+//         r--
+//     }
+// }
+// // -4 4
+// // -2 2
+
+// //To find the largest pair of the 2 elements using indexing with unsorted elements
+// function largestPairSumofTwo(numbers){
+//     const num = numbers.sort((a, b) => b - a);
+//     return num[0] + num[1];
+// }
+// const result = largestPairSumofTwo([9,7,8,4,5,6,1,2,3])
+// console.log(result) //17
 
