@@ -181,3 +181,12 @@
   
 //   const input = covertArryInOneDimension(["a", "b", "c", "d"], 1);
 //   console.log(input) //[ [ 'a' ], [ 'b' ], [ 'c' ], [ 'd' ] ]
+
+// // Checking all letters of second words should present in first word, in the same order
+// function characterPresent(arr){
+//     for(let str of arr[1]){
+//         if(!str[0].includes(str)) return false
+//     }
+//     return true
+//   }
+//   console.log(characterPresent(["hello","eho"])) //true
