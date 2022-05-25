@@ -17,4 +17,4 @@ function findPalindrome(str){
     return str
 }
 
-console.log(findPalindrome(forgeeksskeegfor))
+console.log(findPalindrome("forgeeksskeegfor"))

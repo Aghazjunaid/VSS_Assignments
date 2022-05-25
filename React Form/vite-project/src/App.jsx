@@ -9,6 +9,11 @@ import GoogleForm from './components/Form/GoogleForm';
 import Parent from './components/Context/Parent';
 import UseMemo from './components/UseMemo/UseMemo';
 export const GlobalContext = createContext()
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Home from './components/router/Home';
+import About from './components/router/About';
+import Get from './components/router/Get';
+// import Parent from './components/Memo/parent';
 function App() {
   const [color, setColor] = useState('red')
   return (
@@ -24,6 +29,17 @@ function App() {
       <Parent/>
     </GlobalContext.Provider> */}
     <UseMemo/>
+    <Parent/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>}/>
+        <Route path='/get' element={<Get/>}/>
+        <Route path='/get/:id' element={<Get/>}/>
+        <Route path='/get/:id/:name' element={<Get/>}/>
+      </Routes>
+    </BrowserRouter>
+
     </>
   )
 }

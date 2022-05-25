@@ -9,7 +9,7 @@ function Parent() {
         <div>
             {counter}
             <button onClick={ () => setCounter(counter+1)}>Increse</button>
-            <Child/>
+            <Child counter={counter}/>
         </div>
     )
 }
