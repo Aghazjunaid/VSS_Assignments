@@ -10,18 +10,18 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './components/router/Home';
 import About from './components/router/About';
 import Get from './components/router/Get';
+import Parent from './components/Memo/parent';
 function App() {
 
   return (
     <>
     {/* <Form/> */}
     {/* <FunctionalForm/> */}
-{/* <Parent/> */}
     {/* <Types/> */}
     {/* <LifecycleV1/> */}
     {/* <Level3/> */}
     {/* <GoogleForm/> */}
-  
+    <Parent/>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>} />
