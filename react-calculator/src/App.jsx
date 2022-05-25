@@ -5,6 +5,7 @@ import {useState, useEffect} from 'react';
 import UseState from './component/useState/useState';
 import Ue1 from './component/useEffect/ue1';
 import UseMemo from './component/UseMemo';
+import Reverse from './component/Reverse';
 
 function App() {
   // const [mouseTimer, setMouseTimer] = useState()
@@ -42,7 +43,8 @@ function App() {
     <>
       {/* <UseState/> */}
       {/* <Ue1/> */}
-      <UseMemo/>
+      {/* <UseMemo/> */}
+      <Reverse/>
     </>
   )
 }
