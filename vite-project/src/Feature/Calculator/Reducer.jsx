@@ -5,11 +5,15 @@ const initialState = {
 const calculatorReducer = (state = initialState, action) => {
     switch(action.type){
         case 'ADD_NUMBER': 
-            let a = parseInt(action.payload.num1)
-            let b = parseInt(action.payload.num2)
             return {
-                ...state, result : (a+b)
+                ...state, result : (action.payload.num1+action.payload.num2)
             }
+        case 'SUBSTRACT_NUMBER':
+            return {
+                ...state, result : (action.payload.num1-action.payload.num2)
+            }
+            
+            
         default :
             return state
     }
