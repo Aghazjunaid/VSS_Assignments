@@ -19,6 +19,8 @@ function Calculator() {
             <div>
                 <button onClick={() => dispatch({type:"ADD_NUMBER", payload: input})}>ADD</button>
                 <button onClick={() => dispatch({type:"SUBSTRACT_NUMBER", payload: input})}>SUBSTRACT</button>
+                <button onClick={() => dispatch({type:"MULTIPLY_NUMBER", payload: input})}>MULTIPLY</button>
+                <button onClick={() => dispatch({type:"DIVIDE_NUMBER", payload: input})}>DIVIDE</button>
             </div>
             <h3>Result : {result}</h3>
         </>
