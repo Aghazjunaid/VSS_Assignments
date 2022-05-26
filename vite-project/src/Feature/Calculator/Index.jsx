@@ -14,10 +14,11 @@ function Calculator() {
 
     return (
         <>
-            <input type='number' value={input.num1} onChange={(e) => {setInput({...input, num1: e.target.value})}} />
-            <input type='number' value={input.num2} onChange={(e) => {setInput({...input, num2: e.target.value})}} />
+            <input type='number' value={input.num1} onChange={(e) => {setInput({...input, num1: parseInt(e.target.value)})}} />
+            <input type='number' value={input.num2} onChange={(e) => {setInput({...input, num2: parseInt(e.target.value)})}} />
             <div>
                 <button onClick={() => dispatch({type:"ADD_NUMBER", payload: input})}>ADD</button>
+                <button onClick={() => dispatch({type:"SUBSTRACT_NUMBER", payload: input})}>SUBSTRACT</button>
             </div>
             <h3>Result : {result}</h3>
         </>
